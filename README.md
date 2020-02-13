@@ -26,7 +26,7 @@ To stop the application, execute `npm stop`.
 To run the unit tests, execute:
  
 ```bash
-npm run test       # unit tests with linter
+npm run test       # unit tests
 ```
  
 ## Build package
