@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import FactorialNumeric from './card/factorialNumber/factorialNumber';
+import CalculateFactorial from './features/factorial/calculateFactorial';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <FactorialNumeric/>
+        <CalculateFactorial/>
       </header>
     </div>
   );

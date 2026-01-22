@@ -1,8 +1,9 @@
 import React from 'react';
-import {calculateFactorial, isValidValue} from './factorialFunctions'
+import calculateFactorial from '../../utils/math'
+import isValidValue from '../../utils/validators'
 
 const WithContainer = WrapperComponent => {
-    return class FactoriaNumberContainer extends React.Component {
+    return class FactorialNumberContainer extends React.Component {
 
         constructor(){
             super();

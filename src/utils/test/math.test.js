@@ -1,0 +1,16 @@
+import calculateFactorial from '../math'
+
+describe('Factorial Functions Tests', () => {
+    it('returns 1 when value is 0', () => {
+        expect(calculateFactorial(0)).toBe(1);
+    });
+
+    it('returns 1 when value is 1', () => {
+        expect(calculateFactorial(1)).toBe(1);
+    });
+
+    it('returns 6 when value is 3', () => {
+        expect(calculateFactorial(3)).toBe(6);
+    });
+});
+

@@ -2,10 +2,10 @@ import React from 'react';
 import NumericInput from '../../component/numericInput/numericInput';
 import SubmitButton from '../../component/button/submitButton';
 import PropTypes from 'prop-types';
-import WithContainer from './factorialNumberContainer'
+import WithContainer from './calculateFactorialContainer'
 import '../../App.css';
 
-const FactorialNumeric = ({text, onKeyUp, onClick}) => {
+const CalculateFactorial = ({text, onKeyUp, onClick}) => {
     return <div>
         <div>
             <span>
@@ -28,10 +28,10 @@ const FactorialNumeric = ({text, onKeyUp, onClick}) => {
 }
 
 
-FactorialNumeric.propTypes = {
+CalculateFactorial.propTypes = {
     text: PropTypes.string,
     onClick: PropTypes.func,
     onKeyUp: PropTypes.func
 };
 
-export default WithContainer(FactorialNumeric)
+export default WithContainer(CalculateFactorial)
