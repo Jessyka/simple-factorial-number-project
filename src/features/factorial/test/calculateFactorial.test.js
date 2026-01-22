@@ -1,6 +1,6 @@
 import {mount} from '../../../enzyme'
 import React from 'react';
-import FactorialNumeric from '../factorialNumber';
+import CalculateFactorial from '../calculateFactorial';
 
 describe('Factorial Number Component', () => {
 
@@ -15,20 +15,20 @@ describe('Factorial Number Component', () => {
     }
 
     it('renders component', () => {
-        const factorialNumberComponent = mount(<FactorialNumeric/>);
+        const factorialNumberComponent = mount(<CalculateFactorial/>);
         expect(factorialNumberComponent).toHaveLength(1);
     });
 
     it('renders component with initial warning label', () => {
         const initialText = 'Insert a value and click to calculate factorial.' ;
-        const factorialNumberComponent = mount(<FactorialNumeric/>);
+        const factorialNumberComponent = mount(<CalculateFactorial/>);
         const label = factorialNumberComponent.find({ id: 'factorial-number-label' });
         expect(label.text()).toEqual(initialText);
     });
 
     it('renders correct value after calculates inputed value', () => {
         const expectedMessage = 'Factorial= 1' ;
-        const factorialNumberComponent = mount(<FactorialNumeric/>);
+        const factorialNumberComponent = mount(<CalculateFactorial/>);
         
         simulateKeyUp(factorialNumberComponent, 'factorial-number-input', 1);
         simulateSubmit(factorialNumberComponent);
@@ -39,7 +39,7 @@ describe('Factorial Number Component', () => {
 
     it('renders error messafe when inputed value is incorrect', () => {
         const errorMessage = 'Invalid value!' ;
-        const factorialNumberComponent = mount(<FactorialNumeric/>);
+        const factorialNumberComponent = mount(<CalculateFactorial/>);
         
         simulateKeyUp(factorialNumberComponent, 'factorial-number-input', 'ab');
         simulateSubmit(factorialNumberComponent);
