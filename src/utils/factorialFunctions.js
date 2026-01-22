@@ -1,5 +1,4 @@
-
-export const calculateFactorial = value => {
+const calculateFactorial = value => {
     if(value === 0)
         return 1;
 
@@ -12,7 +11,4 @@ export const calculateFactorial = value => {
     return factorial;
 }
 
-export const isValidValue = value => {
-    var pattern = /^\d+$/;
-    return pattern.test(value); 
-}
+export default calculateFactorial;
