@@ -1,4 +1,4 @@
-import calculateFactorial from '../factorialFunctions'
+import calculateFactorial from '../math'
 
 describe('Factorial Functions Tests', () => {
     it('returns 1 when value is 0', () => {

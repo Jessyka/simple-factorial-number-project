@@ -1,5 +1,5 @@
 import React from 'react';
-import calculateFactorial from '../../utils/factorialFunctions'
+import calculateFactorial from '../../utils/math'
 import isValidValue from '../../utils/validators'
 
 const WithContainer = WrapperComponent => {
